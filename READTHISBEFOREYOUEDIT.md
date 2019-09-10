@@ -1,7 +1,7 @@
 # Drone Automation
 Progress so far....
 # CURRENTLY ACTIVE USERS
-
+![Drone]()
   Atul Phadke (Owner)
   
   No one else
@@ -15,9 +15,11 @@ Progress so far....
   
   T = Terminated (Decided it is too difficult)
   
-  IP of Raspberry Pi Main= 192.168.1.14
+  IP of Raspberry Pi Main= pi@192.168.1.14
+  Password = Nashua
   
-  IP of Raspberry Pi Zero
+  IP of Raspberry Pi Zero = pi@192.168.1.18
+  Password = raspberry
   
   NO ONE SHOULD HAVE SUDO
   
