@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block Nav%}
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4$
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min$
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.$
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Drone Statistics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home Page</a></li>
+    </ul>
+  </div>
+</nav>
+</body>
+{% endblock %}
+{% block content %}
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">$
+  <strong>Success!</strong> Please Go back to Home Page! Servo Power ==> {{t$
+</div>
+{% endblock %}
