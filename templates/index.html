@@ -1,0 +1,106 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .alert {
+  padding: 20px;
+  background-color: #16f050;
+  color: white;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+hr {
+  border: 4px solid black;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  {border-radius: 12px;}
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+</style>
+</head>
+<body style= "background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/60$
+{% block Nav %}
+
+{% endblock %}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/j$
+<font color="white" face="Impact" size = "20">Drone Statistics</font>
+<br>
+<img style="position:absolute; top:5px; left:700px;" src="http://www.pngall.com/wp-cont$
+<font color="white" face="Impact" size = "5">The Official Site For </font><br>
+<font face="Impact" color="white" size = "5">Controlling your Drone </font><br>
+<font color="white" face="Impact" size = "10">Camera</font> <br>
+<img style="-webkit-user-select: none;margin: auto;" src="http://192.168.1.14:8081/" al$
+<hr>
+
+<form action= "/" role="form">
+<font color="white" face="Impact" size = "10">GPS Positioning</font> <br>
+<script type="text/javascript">
+$(document).ready( function(){
+    $.ajaxSetup ({
+    // Disable caching of AJAX responses
+        cache: false
+    });
+   refresh();
+});
+
+function refresh()
+{
+    setTimeout( function() {
+       console.log("coming here")
+       $('#auto').load("static/long.txt");
+
+          console.log("inside loop")
+          refresh();
+       }, 20);
+}
+</script>
+<div id="auto" face="Impact" size = "10"></div>
+<font color="white" face="Impact" size = "10">Angle of Rotation:</font>
+</form>
+<hr>
+<font color="white" face="Impact" size = "10">Drone Power</font>
+<form action= "/power" role="form">
+  <font color="white" face="Impact" size = "10"">Power in Percentage ---></font>
+  <input name="Power" placeholder="Input Power....."><br>
+  <input type ="submit" value="Submit">
+  <br>
+  <br>
+  {% block content %}
+
+  {% endblock %}
+</form>
+</body>
+</html>
