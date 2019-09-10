@@ -6,7 +6,6 @@ Progress so far....
   
   No one else
 
-# Progress so far
 # Key
   NYS = Not yet Started
   
@@ -21,6 +20,8 @@ Progress so far....
   IP of Raspberry Pi Zero
   
   NO ONE SHOULD HAVE SUDO
+  
+# Progress so far
 
   Camera View [C]
   
