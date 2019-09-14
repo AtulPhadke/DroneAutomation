@@ -11,7 +11,7 @@ import os
 
 @app.route('/')
 def function():
-    return render_template("index.html")
+    return render_template("Websitetest.html")
 
 @app.route('/power')
 def power():
